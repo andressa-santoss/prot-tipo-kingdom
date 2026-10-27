@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#080f19">
+    <meta name="description" content="Demonstração de plataforma de inteligência operacional industrial.">
+    <title>KinDom — Inteligência operacional</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header"><a class="logo" href="#inicio">Kin<span>Dom</span><i>.</i></a><button class="menu-toggle"
+            aria-label="Abrir menu" aria-expanded="false">☰</button>
+        <nav id="menu"><a href="#problema">Operação</a><a href="#inteligencia">Inteligência</a><a
+                href="#ecossistema">Ecossistema</a><a href="#conhecimento">Conhecimento</a><a class="nav-cta"
+                href="#diagnostico">Diagnóstico ↗</a></nav>
+    </header>
+    <main>
+        <section class="hero section" id="inicio">
+            <div class="hero-glow"></div>
+            <div class="container hero-grid">
+                <div class="reveal">
+                    <div class="eyebrow"><span class="dot"></span> Atlas · ERP industrial com inteligência nativa</div>
+                    <h1>Enxergue.<br><span>Decida.</span><br>Execute.</h1>
+                    <p class="lead">A KinDom transforma o que acontece no chão de fábrica em informação conectada — e
+                        informação conectada em decisão tomada a tempo.</p>
+                    <div class="actions"><a class="btn primary" href="#diagnostico">Fazer o diagnóstico
+                            <span>↗</span></a><a class="btn secondary" href="#problema">Ver como funciona ↓</a></div>
+                    <div class="metrics">
+                        <div><strong>8</strong><small>módulos integrados</small></div>
+                        <div><strong>6</strong><small>agentes especialistas</small></div>
+                        <div><strong>1 dia</strong><small>prazo de resposta</small></div>
+                    </div>
+                </div>
+                <div class="hero-panel reveal">
+                    <div class="panel-top"><span><span class="dot"></span> Nabucodonosor</span><small>MONITORAMENTO
+                            ATIVO</small></div>
+                    <div class="warning">⚠ RISCO DETECTADO <span>ALTA PRIORIDADE</span></div>
+                    <h3>O pedido #2841 não vai entregar no prazo.</h3>
+                    <p>3 sinais conectados indicam risco operacional.</p>
+                    <div class="signal"><span>Estoque</span>
+                        <div class="bar"><i style="width:35%"></i></div><b>118 / 340 kg</b>
+                    </div>
+                    <div class="signal"><span>Compras</span>
+                        <div class="bar"><i style="width:78%"></i></div><b>15 dias</b>
+                    </div>
+                    <div class="signal"><span>PCP</span>
+                        <div class="bar"><i style="width:92%"></i></div><b>92%</b>
+                    </div>
+                    <div class="recommend"><small>RECOMENDAÇÃO</small>
+                        <p>Antecipar compra de 222 kg e cotar fornecedor alternativo.</p>
+                    </div>
+                    <div class="panel-bottom"><span class="dot"></span> Detectado 6 dias antes do prazo</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="problema">
+            <div class="container">
+                <div class="section-heading reveal"><span class="kicker">01 / O PROBLEMA</span>
+                    <h2>Um pedido atrasa.<br><em>A conta chega depois.</em></h2>
+                    <p>Quando o problema aparece no relatório, ele já custou dinheiro. O sinal existia dias antes —
+                        espalhado em sistemas que não conversam entre si.</p>
+
+
+
+                </div>
+
+
+
+
+
+
+                <div class="problem-grid">
+                    <article class="card order-card reveal">
+                        <div class="card-header"><span>PV #2841 · Metalúrgica Andrade</span><span class="pill danger">EM
+                                RISCO</span></div>
+                        <h3>Pedido #2841 entrou em risco.</h3>
+                        <div class="facts">
+                            <div><small>Valor</small><strong>R$ 312.400</strong></div>
+                            <div><small>Prazo contratado</small><strong>12 dias</strong></div>
+                            <div><small>Material disponível</small><strong>118 de 340 kg</strong></div>
+                            <div><small>Lead time</small><strong>15 dias</strong></div>
+                            <div><small>Ocupação da linha</small><strong>92%</strong></div>
+                            <div><small>Produção</small><strong>Não liberada</strong></div>
+                        </div>
+                    </article>
+                    <article class="card reveal"><span class="kicker">O PONTO CEGO</span>
+                        <h3>O problema não está em um módulo.</h3>
+                        <p>Compras não errou. O estoque está correto. A produção está no plano. Cada área, olhando só
+                            para sua tela, vê uma operação saudável.</p>
+                        <div class="chips">
+                            <span>Comercial</span><span>Compras</span><span>Estoque</span><span>PCP</span><span>Produção</span><span>Financeiro</span><span>Logística</span>
+                        </div>
+                        <p class="accent-line">O risco nasce entre elas — e ninguém está olhando para o entre.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="ecossistema">
+            <div class="container">
+                <div class="section-heading reveal"><span class="kicker">03 / ECOSSISTEMA</span>
+                    <h2>Toda a operação alimenta<br><em>uma inteligência só.</em></h2>
+                    <p>Explore os módulos. Cada área fornece sinais para uma visão integrada da fábrica.</p>
+                </div>
+                <div class="modules" id="modules"></div>
+                <div class="module-detail card" id="moduleDetail" aria-live="polite"><span class="kicker">MÓDULO
+                        SELECIONADO</span>
+                    <h3>Comercial</h3>
+                    <p>Pedidos, prazos e compromissos com o cliente.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="conhecimento">
+            <div class="container">
+                <div class="section-heading reveal"><span class="kicker">04 / CONHECIMENTO</span>
+                    <h2>O cérebro chega pronto.<br><em>E aprende a sua fábrica.</em></h2>
+                    <p>Conhecimento técnico aplicado à indústria, combinado ao aprendizado específico de cada operação.
+                    </p>
+                </div>
+                <div class="three">
+                    <article class="card reveal"><span class="number">01</span>
+                        <h3>Vem pronto</h3>
+                        <p>Uma base técnica da função, com conceitos como Lean, MRP, custeio e sourcing.</p>
+                    </article>
+                    <article class="card reveal"><span class="number">02</span>
+                        <h3>Aprende</h3>
+                        <p>Desvios, decisões e resultados da sua operação refinam as próximas recomendações.</p>
+                    </article>
+                    <article class="card reveal"><span class="number">03</span>
+                        <h3>Fica seu</h3>
+                        <p>O conhecimento específico da fábrica permanece vinculado ao ambiente da empresa.</p>
+                    </article>
+                </div>
+                <div class="knowledge-visual reveal">
+                    <div class="orb" aria-hidden="true">
+                        <div class="orb-core"></div>
+                    </div>
+                    <div><span class="kicker">INTELIGÊNCIA EM CAMADAS</span>
+                        <h3>Conhecimento que evolui com a operação</h3>
+                        <p>Selecione os pontos para conhecer exemplos de aprendizados.</p>
+                        <div class="prompt-list"><button class="knowledge-btn"
+                                data-info="Padrões recorrentes são identificados pela repetição de eventos operacionais.">Padrão
+                                recorrente</button><button class="knowledge-btn"
+                                data-info="Desvios confirmados ajudam a diferenciar alertas relevantes de ruídos.">Desvio
+                                confirmado</button><button class="knowledge-btn"
+                                data-info="Decisões do gestor registram o contexto e o desfecho da ação.">Decisão do
+                                gestor</button></div>
+                        <p id="knowledgeInfo" class="accent-line">Selecione um tipo de aprendizado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="section section-alt" id="comparacao">
+            <div class="container">
+                <div class="section-heading reveal"><span class="kicker">05 / RESULTADOS</span>
+                    <h2>Hoje você descobre o problema.<br><em>Com o Atlas, ele avisa você.</em></h2>
+                    <p>A diferença está no momento em que a informação chega.</p>
+                </div>
+                <div class="comparison">
+                    <div class="compare-head"><span>PROCESSO</span><span>HOJE</span><span>COM O ATLAS</span></div>
+                    <div class="compare-row"><b>Pedido em atraso</b><span>Aparece quando o cliente cobra.</span><span>O
+                            risco aparece dias antes.</span></div>
+                    <div class="compare-row"><b>Estoque</b><span>Conferido no inventário.</span><span>Avisa o que vai
+                            faltar.</span></div>
+                    <div class="compare-row"><b>Compras</b><span>Urgência e custo maior.</span><span>Compra
+                            planejada.</span></div>
+                    <div class="compare-row"><b>Programação</b><span>Planilha isolada.</span><span>Visível para toda a
+                            gestão.</span></div>
+                    <div class="compare-row"><b>Margem</b><span>Conhecida após faturar.</span><span>Estimativa antes do
+                            aceite.</span></div>
+                    <div class="compare-row"><b>Gestão</b><span>Números desencontrados.</span><span>Uma visão
+                            compartilhada.</span></div>
+                </div>
+                <div class="center"><a href="#diagnostico" class="btn primary">Onde minha operação está nessa tabela?
+                        ↗</a></div>
+            </div>
+        </section>
+
+        <section class="clientes" id="clientes">
+            <div class="clientes-container">
+                <span class="clientes-tag">NOSSOS CLIENTES</span>
+
+                <h2>Empresas que confiam na
+                    <span>KinDom Tech</span>
+                </h2>
+
+                <p>
+                    Tecnologia que conecta negócios,
+                    otimiza processos e impulsiona resultados.
+                </p>
+            </div>
+
+
+            <div class="clientes-carousel">
+                <div class="clientes-track">
+
+                    <!-- GRUPO ORIGINAL -->
+                    <div class="clientes-group">
+                        <div class="cliente-logo">
+                            <img src="assets/google.webp" alt="Cliente 1">
+                        </div>
+
+                        <div class="cliente-logo">
+                            <img src="assets/google.webp" alt="Cliente 1">
+                        </div>
+
+                        <div class="cliente-logo">
+                           <img src="assets/google.webp" alt="Cliente 1">
+                        </div>
+
+                        <div class="cliente-logo">
+                            <img src="assets/google.webp" alt="Cliente 1">
+                        </div>
+
+                        <div class="cliente-logo">
+                           <img src="assets/google.webp" alt="Cliente 1">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+        <section class="section" id="diagnostico">
+            <div class="container diagnostic-grid">
+                <div class="reveal"><span class="kicker">06 / DIAGNÓSTICO</span>
+                    <h2>Onde sua operação está<br><em>perdendo tempo?</em></h2>
+                    <p class="lead">Uma conversa sobre os processos reais da sua fábrica. Sem compromisso.</p>
+                    <div class="diagnostic-benefit">✓ Conversa de aproximadamente 40 minutos</div>
+                    <div class="diagnostic-benefit">✓ Sem compromisso</div>
+                    <div class="diagnostic-benefit">✓ Demonstração local do formulário</div>
+                </div>
+                <form class="card diagnostic-form reveal" id="diagnosticForm">
+                    <div class="form-progress">PASSO <span id="stepNumber">1</span> DE 2 <div class="progress"><i
+                                id="progressBar"></i></div>
+                    </div>
+                    <div id="stepOne">
+                        <div class="form-grid"><label>Nome<input name="nome" required autocomplete="name"
+                                    placeholder="Seu nome"></label><label>Empresa<input name="empresa" required
+                                    placeholder="Nome da empresa"></label><label>Cargo<input name="cargo" required
+                                    placeholder="Seu cargo"></label><label>WhatsApp<input name="whatsapp" type="tel"
+                                    required placeholder="(11) 99999-9999"></label><label class="full">E-mail
+                                corporativo<input name="email" type="email" required
+                                    placeholder="voce@empresa.com.br"></label><label class="full">Porte da
+                                operação<select name="porte" required>
+                                    <option value="">Selecione</option>
+                                    <option>Até 50 colaboradores</option>
+                                    <option>51 a 200 colaboradores</option>
+                                    <option>201 a 500 colaboradores</option>
+                                    <option>Mais de 500 colaboradores</option>
+                                </select></label><label class="full">Principal desafio<input name="desafio" required
+                                    placeholder="Ex.: PCP reativo, estoque sem acurácia"></label></div><button
+                            class="btn primary form-btn" type="button" id="nextStep">Continuar diagnóstico →</button>
+                    </div>
+                    <div id="stepTwo" hidden>
+                        <p>Conte um pouco sobre sua operação.</p>
+                        <div class="form-grid"><label class="full">Como é feito o planejamento?<select
+                                    name="planejamento" required>
+                                    <option value="">Selecione</option>
+                                    <option>Planilhas</option>
+                                    <option>ERP</option>
+                                    <option>Ambos</option>
+                                </select></label><label class="full">Maior gargalo<select name="gargalo" required>
+                                    <option value="">Selecione</option>
+                                    <option>Estoque</option>
+                                    <option>Compras</option>
+                                    <option>Produção</option>
+                                    <option>Integração de dados</option>
+                                </select></label><label class="full">Frequência de atrasos<select name="atrasos"
+                                    required>
+                                    <option value="">Selecione</option>
+                                    <option>Raramente</option>
+                                    <option>Às vezes</option>
+                                    <option>Frequentemente</option>
+                                </select></label><label class="full">Observações<textarea name="observacoes" rows="3"
+                                    placeholder="Descreva outros desafios (opcional)"></textarea></label></div>
+                        <div class="form-actions"><button type="button" class="btn secondary" id="prevStep">←
+                                Voltar</button><button type="submit" class="btn primary">Concluir demonstração</button>
+                        </div>
+                    </div>
+                    <div id="formSuccess" hidden>
+                        <h3>✓ Diagnóstico preenchido</h3>
+                        <p>Esta é uma demonstração front-end. Nenhum dado foi enviado. Para receber contatos reais,
+                            conecte este formulário a um serviço de backend.</p><button type="button" id="resetForm"
+                            class="btn secondary">Preencher novamente</button>
+                    </div><small class="disclaimer">Os dados preenchidos permanecem nesta página e não são enviados a
+                        servidores.</small>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer-inner"><a href="#inicio" class="logo">Kin<span>Dom</span><i>.</i></a>
+            <p>Demonstração independente de interface · Não é o site oficial.</p><a href="#inicio">Voltar ao topo ↑</a>
+        </div>
+    </footer>
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>
